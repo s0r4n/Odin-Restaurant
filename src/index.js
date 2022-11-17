@@ -1,4 +1,4 @@
-import "./style/home.css";
-import home from "./page/home";
+import "./styles/home.css";
+import home from "./pages/home";
 
 home();
