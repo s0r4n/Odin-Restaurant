@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Amatic SC";
+    src: url('/src/fonts/AmaticSC-Regular.ttf') format('truetype')
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -6,6 +11,7 @@
     position: fixed;
     color: white;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .navbar-right {
@@ -19,6 +25,8 @@
 
 body {
     margin: 0;
+    font-family: "Amatic SC";
+    font-weight: lighter;
 }
 
 #content {
@@ -29,6 +37,8 @@ body {
 
 .navbar-left {
     width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -49,4 +59,49 @@ img {
     background-size: 100vw;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    font-size: 8px;
+}
+
+.divider-line {
+    width: 40%;
+    border-bottom: 0.5px solid white;
+    
+}
+
+.pizza-text {
+    color: white;
+    text-align: center;
+    font-family: "Amatic SC";
+}
+
+.animated-text {
+    font-size: 36px;
+}
+
+
+.animated-text:after {
+	content: "";
+	animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% { content:"ITALIAN"; opacity: 1;}
+    17% { opacity: 0.1;}
+    33% { content:"PIZZA"; opacity: 1;}
+    50% { opacity: 0.1;}
+    66% { content:"AUTHENTIC"; opacity: 1;}
+    83% { opacity: 0.1;}
+    100% { content:"ITALIAN"; opacity: 1;}
+  }
