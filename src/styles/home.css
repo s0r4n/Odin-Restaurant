@@ -3,25 +3,6 @@
     src: url('/src/fonts/AmaticSC-Regular.ttf') format('truetype')
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    height: 15%;
-    width: 80%;
-    position: fixed;
-    color: white;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.navbar-right {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2vw;
-    align-items: center;
-    width: 50%;
-    font-size: calc(10px + 1vw);
-}
 
 body {
     margin: 0;
@@ -35,19 +16,7 @@ body {
     align-items: center;
 }
 
-.navbar-left {
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
 
-.logo {
-    background-image: url(/src/images/logo.png);
-    background-size: 50px;
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-}
 
 img {
     max-width: 100%;
@@ -87,7 +56,11 @@ img {
 }
 
 .animated-text {
-    font-size: 36px;
+    font-size: calc(36px + 2vw);
+}
+
+p {
+    font-size: 24px;
 }
 
 

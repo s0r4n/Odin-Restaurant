@@ -1,4 +1,3 @@
-import "./styles/home.css";
-import home from "./pages/home";
+import firstLoad from "./functions/loader";
 
-home();
+firstLoad();
