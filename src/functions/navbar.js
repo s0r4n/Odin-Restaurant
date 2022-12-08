@@ -1,7 +1,6 @@
 import menu from "../pages/menu";
 import contact from "../pages/contact";
 import home from "../pages/home";
-import "../styles/home.css";
 import clear from "../functions/clear";
 
 function navbar() {
@@ -32,8 +31,11 @@ function navbar() {
     navElement2.addEventListener("click", () => {
         clear();
         menu();
-    })
-
+    });
+    navElement3.addEventListener("click", () => {
+        clear();
+        contact();
+    });
 
 
     //add class to navbar elements
