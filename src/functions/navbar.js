@@ -28,7 +28,13 @@ function navbar() {
     navElement1.addEventListener("click", () => {
         clear();
         home();
+    });
+    navElement2.addEventListener("click", () => {
+        clear();
+        menu();
     })
+
+
 
     //add class to navbar elements
     navbar.className = "navbar";
