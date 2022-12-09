@@ -34,3 +34,9 @@ textarea {
     width: 25%;
     height: 20%;
 }
+
+.map {
+    margin-top: 50px;
+    width: max(500px 50vw);
+    height: 100%;
+}

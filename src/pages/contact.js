@@ -70,7 +70,21 @@ function contact() {
     for(let elm of navbarText) {
         elm.style.color = "black";
     }
+
+
+    const map = document.createElement("iframe");
+    map.className = "map";
+    map.setAttribute("src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6042.3793678345355!2d-73.97155716479612!3d40.779843863424716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park!5e0!3m2!1sen!2suk!4v1670617144809!5m2!1sen!2suk")
+    
+    container.appendChild(map);
+
+
     
 }
+
+
+
+  
+  
 
 export default contact;
